@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiranov UI Component</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card" id="jiranov-component" role="region" aria-label="Jiranov Component">
+      <header class="card__header">
+        <h1 class="card__title">Jiranov</h1>
+        <span class="card__badge" id="status-badge">Active</span>
+      </header>
+
+      <div class="card__body">
+        <p class="card__description">
+          A lightweight interactive component for the Jiranov application interface.
+        </p>
+
+        <ul class="feature-list" aria-label="Features">
+          <li class="feature-list__item">
+            <span class="feature-list__icon" aria-hidden="true">✓</span>
+            Responsive layout
+          </li>
+          <li class="feature-list__item">
+            <span class="feature-list__icon" aria-hidden="true">✓</span>
+            Accessible markup
+          </li>
+          <li class="feature-list__item">
+            <span class="feature-list__icon" aria-hidden="true">✓</span>
+            Interactive controls
+          </li>
+        </ul>
+      </div>
+
+      <footer class="card__footer">
+        <button class="btn btn--primary" id="action-btn" type="button">
+          Get Started
+        </button>
+        <button class="btn btn--secondary" id="toggle-btn" type="button">
+          Toggle Status
+        </button>
+      </footer>
+
+      <div class="card__notification" id="notification" role="alert" aria-live="polite" hidden>
+        Action completed successfully.
+      </div>
+    </section>
+  </main>
+
+  <script src="component.js"></script>
+</body>
+</html>
